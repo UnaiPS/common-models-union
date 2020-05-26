@@ -33,4 +33,6 @@ public class Process implements Serializable{
 	@ManyToOne(fetch = FetchType.EAGER)
 	@JoinColumn(name = "id_conn_destination")
 	private Connections destination;
+	
+	private Boolean keepIds;
 }
